@@ -1,9 +1,9 @@
-import React, { useLayoutEffect, useState } from "react";
-const IS_MOBILE_BREAK_POINT = 780;
+import React, { useEffect, useState } from "react";
+const IS_MOBILE_BREAK_POINT = 768;
 function useIsMobile() {
   const [isMobile, setIsMobile] = useState(false);
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     function handelResize(e) {
       if (window.innerWidth < IS_MOBILE_BREAK_POINT) {
         setIsMobile(true);

@@ -1,3 +1,9 @@
+import HomePage from "../components/pages-components/home";
+
 export default function Home() {
-  return <h1 className="title">Home</h1>;
+  return (
+    <>
+      <HomePage />
+    </>
+  );
 }

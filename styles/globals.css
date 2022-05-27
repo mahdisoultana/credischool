@@ -6,16 +6,16 @@
   @apply w-full h-full  bg-cover   !important;
 }
 .title {
-  @apply text-blue-xdark font-extrabold text-6xl;
+  @apply text-blue-xdark font-extrabold md:text-6xl text-5xl;
 }
 .subtitle {
-  @apply text-blue-xdark font-extrabold   leading-9 text-5xl;
+  @apply text-blue-xdark font-extrabold   leading-9  md:text-5xl text-2xl;
 }
 .text {
-  @apply leading-6 text-sm font-medium text-gray-500;
+  @apply leading-6 font-medium text-gray-500 md:text-sm text-xs;
 }
 .spanTag {
-  @apply text-blue-xdark  leading-9 text-lg font-bold;
+  @apply text-blue-xdark  leading-9 md:text-lg text-sm font-bold;
 }
 .num {
   @apply font-extrabold  leading-9 text-xl text-white;
@@ -25,7 +25,7 @@
   border-radius: 16px;
 }
 .btn {
-  @apply text-white font-medium text-base leading-6 rounded-lg   bg-blue-dark justify-center items-center flex  py-3 px-9;
+  @apply text-white font-medium text-base leading-6 rounded-lg   bg-blue-dark justify-center items-center flex  md:py-3 py-2 md:px-9 px-7;
 }
 @tailwind utilities;
 

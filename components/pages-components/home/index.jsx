@@ -7,16 +7,18 @@ function HomePage() {
   return (
     <div>
       <Features />
-      <h2 className="subtitle my-36 text-center">Explore Departement</h2>
+      <h2 className="subtitle md:my-16 my-10 text-center font-black">
+        Explore Departement
+      </h2>
       <GridCol2Card />
-      <GridCol2Card className="order-1" />
+      <GridCol2Card className="-order-1 lg:order-1" />
       <GridCol2Card />
-      <h2 className="subtitle capitalize leading-tight mt-36 mb-20 text-center">
+      <h2 className="subtitle md:text-5xl text-xl p-2 capitalize leading-tight md:my-20 my-8 text-center">
         More Then 500.000 Students <br /> has Enrolled this year
       </h2>
-      <div className="h-[600px] bg-indigo-900"></div>
-      <div className="flex justify-around items-center mt-10">
-        <div className="flex  items-center  shadow-btn shadow-blue-xdark/40   rounded-lg overflow-hidden bg-blue-dark  pr-1  ">
+      <div className="md:h-[600px] h-[400px] bg-indigo-900"></div>
+      <div className="flex flex-col md:flex-row justify-around items-center md:mt-10 mt-4">
+        <div className="flex  items-center mt-4  shadow-btn shadow-blue-xdark/40   rounded-lg overflow-hidden bg-blue-dark  pr-1  ">
           <div className="bg-gray-100 self-stretch">
             <BoxSmile />
           </div>
@@ -25,7 +27,7 @@ function HomePage() {
             <p className="num text-sm ">+500.000</p>
           </div>
         </div>
-        <div className="flex  items-center  shadow-btn shadow-blue-xdark/40   rounded-lg overflow-hidden bg-red-dark  pr-1  ">
+        <div className="flex  items-center mt-4  shadow-btn shadow-blue-xdark/40   rounded-lg overflow-hidden bg-red-dark  pr-1  ">
           <div className="bg-gray-100 self-stretch">
             <BoxSmile />
           </div>

@@ -4,7 +4,7 @@ function useIsMobile() {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    function handelResize(e) {
+    function handelResize() {
       if (window.innerWidth < IS_MOBILE_BREAK_POINT) {
         setIsMobile(true);
       } else {
@@ -12,6 +12,7 @@ function useIsMobile() {
       }
     }
     window.addEventListener("resize", handelResize);
+    handelResize();
     return () => {
       window.removeEventListener("resize", handelResize);
     };

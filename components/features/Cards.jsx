@@ -3,7 +3,7 @@ import ImageWithBlur from "../styledComponent/ImageWithBlur";
 
 function Cards() {
   return (
-    <div className="grid grid-cols-3 gap-16 text-center mt-28">
+    <div className="grid p-4 grid-cols-1 md:grid-cols-3 gap-16 text-center mt-28">
       <div>
         <ImageWithBlur />
         <h3 className="spanTag mt-3">Support</h3>

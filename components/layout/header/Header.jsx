@@ -14,7 +14,7 @@ function Header() {
             with real degrees
           </h1>
 
-          <p className="text md:w-[70%]">
+          <p className="text md:w-[70%] text-gray-800 md:text-gray-500 font-bold">
             Credischool is an accredited virtual university built by top
             professors from Harvard, Stanford, MIT, and many more. The students
             at Credischool are welcome to study at their own pace.

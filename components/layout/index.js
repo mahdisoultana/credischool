@@ -15,16 +15,26 @@ function Layout({ children }) {
             layout="responsive"
             width={100}
             height={100}
+            priority
           />
-          <div className="w-full h-full absolute md:hidden bg-blue-xlight/60"></div>
+          <div className="w-[100vw] top-0 left-0 h-screen block absolute md:hidden bg-blue-xlight/60 "></div>
         </div>
       </div>
 
       <div className="max-w-5xl w-full m-auto  relative z-1">
         <Header />
         <main>{children}</main>
-        <Footer />
       </div>
+
+      <div className="py-8 px-4 w-full max-w-2xl bg-white rounded-sm shadow-md shadow-blue-xdark/20 m-auto -mb-10 flex flex-col md:flex-row items-center justify-center relative z-20 mt-32">
+        <p className="spanTag">Intersted? Let's get you started</p>
+        <button className="btn bg-red-dark shadow-btn md:ml-16 ">
+          Register
+        </button>
+      </div>
+
+      <div className="h-80 bg-indigo-200 relative"></div>
+      <Footer className="max-w-5xl w-full m-auto  relative z-1" />
     </div>
   );
 }

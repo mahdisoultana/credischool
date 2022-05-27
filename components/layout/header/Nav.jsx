@@ -6,11 +6,11 @@ import { useIsScrolledContext } from "../../../context/IsScrolledProvider.jsx";
 function Nav() {
   const { setIsOpen, isOpen } = useNav();
   const isScrolled = useIsScrolledContext();
-
+  // console.log(isOpen);
   return (
     <nav>
       <div
-        className={`max-w-5xl w-full m-auto   md:flex fixed z-20    ${
+        className={`duration-500 max-w-5xl w-full m-auto   md:flex fixed z-20    ${
           isScrolled ? "p-2" : "p-4"
         }      block justify-between items-center `}
       >
